@@ -20,3 +20,7 @@ print(df_laptops[['Price_euros', 'level_price']].tail(5))
 print("\nValores únicos:")
 print(df_laptops['level_price'].unique())
 
+
+
+df_laptops = df_laptops.sort_values(['Company', 'Price_euros'])
+print(f"\nLaptops ordenadas por Company y Price_euros:{df_laptops}")
